@@ -1,9 +1,9 @@
-/*  BASE THEME 
+/*  BASE THEME
 
 Welcome to the base theme.
 
-This theme tries to 'reset' the core css of domoticz into a version that is a bit more in line with current 
-throughts on interaction design. If you want to create your own theme based on this theme, my advice is to 
+This theme tries to 'reset' the core css of Smart Gateway into a version that is a bit more in line with current 
+throughts on interaction design. If you want to create your own theme based on this theme, my advice is to
 create another CSS file that is loaded after this one, and then work in that. That will be the 'subtheme'.
 
 
@@ -13,7 +13,7 @@ This theme generally tries NOT to set any colours, and leaves that to the sub-th
 - link styling. It's important for users that all links are the same colour.
 - Data tables. This theme aims to create a 'middle of the road' design of all data tables.
 - Mobile view. The mobile design follows the standard Apple design.
-- Widgets, like sliders, are partially themed. 
+- Widgets, like sliders, are partially themed.
 
 
 */
@@ -28,7 +28,7 @@ body .ui-draggable:not(.ui-dialog) table  tbody tr > td{
     display:block;
     width:100%;
 	padding: 0;
-	margin: 0;    
+	margin: 0;
 }
 
 #img,
@@ -189,7 +189,7 @@ input{margin-right:3px}
 /*  this is overridden later. It helps if there is a javascript error, then you can still see the content. */
 /*
 body:not(#onMobile) .span3,
-body:not(#onMobile) .span4{ 
+body:not(#onMobile) .span4{
     background-color: rgba(0,0,0,.4);
     border-radius:3px;
 }
@@ -221,7 +221,7 @@ br{   content: "A" !important;
     margin-bottom: 0 !important;
 }
 
-#zwavenodesqueried ~ #configuration br{   
+#zwavenodesqueried ~ #configuration br{
     content: "A" !important;
     display: block !important;
     margin-bottom: 1.5em !important;
@@ -468,7 +468,7 @@ body:not(.login) #holder .container-fluid {padding-top:50px}
     border-bottom-left-radius: 0;
 }
 
-.navbar-fixed-top .navbar-inner, 
+.navbar-fixed-top .navbar-inner,
 .navbar-static-top .navbar-inner {
     box-shadow: none;
     padding: 10px 0 0 0;
@@ -478,7 +478,7 @@ body:not(.login) #holder .container-fluid {padding-top:50px}
     text-shadow: none;
 }
 
-.navbar .brand{ 
+.navbar .brand{
     margin-left:0;
 }
 
@@ -529,20 +529,20 @@ body:not(.login) #holder .container-fluid {padding-top:50px}
 /*  FLOORPLAN */
 
 #BulletGroup{
-    background-color: rgba(0,0,0,0.5)!important; 
+    background-color: rgba(0,0,0,0.5)!important;
     transition: all 1s ease-out;
 }
 #BulletGroup:hover{
     background-color: rgba(0,0,0,1)!important;
 }
 
-#floorplancontent #BulletGroup .bullet, 
+#floorplancontent #BulletGroup .bullet,
 #floorplancontent #BulletGroup .bulletSelected{
     width:30px;
     height:30px;
 }
 
-#floorplancontent #BulletGroup .bullet:hover, 
+#floorplancontent #BulletGroup .bullet:hover,
 #floorplancontent #BulletGroup .bulletSelected:hover{
     background-color:#43A4D3;
 }
@@ -569,8 +569,8 @@ h4{margin-bottom:0;margin-top:20px;}
     margin-top:20px;
 }
 
-#dashcontent h1, 
-#dashcontent h2, 
+#dashcontent h1,
+#dashcontent h2,
 #dashcontent h3 {
     clear: both;
     padding-bottom:10px;
@@ -599,7 +599,7 @@ body .span4  table > tbody > tr{
     -moz-background-size: contain;
     -o-background-size: contain;
     background-size: contain;
-    
+
 }
 
 .divider > .span3  table > tbody > tr,
@@ -656,7 +656,7 @@ table#prebannav select {width:auto!important}
 }
 
 
-#dashcontent #img, 
+#dashcontent #img,
 #dashcontent #img1 {
     top:-35px;
     right:7px;
@@ -677,47 +677,47 @@ table#prebannav select {width:auto!important}
     overflow:visible;
 }
 
-#img img, 
-#img1 img, 
-#img2 img, 
+#img img,
+#img1 img,
+#img2 img,
 #img3 img,
-.img img, 
-.img1 img, 
-.img2 img, 
+.img img,
+.img1 img,
+.img2 img,
 .img3 img{
     height:30px;
     width:auto;
 }
 
-#dashcontent #img, 
-#dashcontent #img1, 
-#dashcontent #img2, 
+#dashcontent #img,
+#dashcontent #img1,
+#dashcontent #img2,
 #dashcontent #img3,
-#dashcontent .img, 
-#dashcontent .img1, 
-#dashcontent .img2, 
+#dashcontent .img,
+#dashcontent .img1,
+#dashcontent .img2,
 #dashcontent .img3{
     top: -48px;
-}    
+}
 
-#dashcontent .span4 #img img, 
-#dashcontent .span4 #img1 img, 
-#dashcontent .span4 #img2 img, 
+#dashcontent .span4 #img img,
+#dashcontent .span4 #img1 img,
+#dashcontent .span4 #img2 img,
 #dashcontent .span4 #img3 img,
-#dashcontent .span4 .img img, 
-#dashcontent .span4 .img1 img, 
-#dashcontent .span4 .img2 img, 
+#dashcontent .span4 .img img,
+#dashcontent .span4 .img1 img,
+#dashcontent .span4 .img2 img,
 #dashcontent .span4 .img3 img{
     height:40px;
     width:40px;
 }
-#dashcontent .span3 #img img, 
-#dashcontent .span3 #img1 img, 
-#dashcontent .span3 #img2 img, 
+#dashcontent .span3 #img img,
+#dashcontent .span3 #img1 img,
+#dashcontent .span3 #img2 img,
 #dashcontent .span3 #img3 img,
-#dashcontent .span3 .img img, 
-#dashcontent .span3 .img1 img, 
-#dashcontent .span3 .img2 img, 
+#dashcontent .span3 .img img,
+#dashcontent .span3 .img1 img,
+#dashcontent .span3 .img2 img,
 #dashcontent .span3 .img3 img{
     height:30px;
     width:30px;
@@ -821,13 +821,13 @@ body .ui-draggable .item tr > .name{
 
 
 @media all and (min-width: 981px){
-    
+
     #bigtext,
     .bigtext{
         top: -25px;
         right: 41px;
     }
-    
+
     #itemtabledoubleicon #bigtext,
     #itemtabledoubleicon .bigtext{right: 70px;}
     #itemtablesmalldoubleicon #bigtext,
@@ -835,8 +835,8 @@ body .ui-draggable .item tr > .name{
 
     #itemtabletrippleicon #bigtext{right: 100px;}
     #itemtablesmalltrippleicon #bigtext{right: 105px;}
-    
-}  
+
+}
 
 #dashcontent .span4 #bigtext,
 #dashcontent .span4 .bigtext{
@@ -906,7 +906,7 @@ body .ui-draggable .item tr > .name{
     top: 52px;
     left: 15px;
     width: 100%;
-    width: calc(100% - 30px);    
+    width: calc(100% - 30px);
     margin:0!important;
     font-style: normal!important;
     /*font-size:12.5px;*/
@@ -1001,7 +1001,7 @@ div[class^="span"] div.item .options a,
 .span3 table > tbody> tr > td:last-of-type a, /* these 'last-of-type'things should be removed after the theme becomes the new default. They were a hack to target the options td. */
 .span4 table > tbody> tr > td:last-of-type a{
     position:relative;
-    left:-23px;  
+    left:-23px;
 }
 
 div[class^="span"] table#itemtable > tbody> tr > td:first-of-type a,
@@ -1060,7 +1060,7 @@ div.item.statusProtected td.name > span::before{
     position: relative;
     top: 1px;
     left:-2px;
-    background: url(/images/lock_closed.png) no-repeat center center; 
+    background: url(/images/lock_closed.png) no-repeat center center;
     -webkit-background-size: 12px;
     -moz-background-size: 12px;
     -o-background-size: 12px;
@@ -1091,7 +1091,7 @@ div.item.statusTimeout td.lastupdate > span::before{
     display: inline-block;
     position: relative;
     /*top: -1px;*/
-    background: url(/images/Alert48_4.png) no-repeat center center; 
+    background: url(/images/Alert48_4.png) no-repeat center center;
     -webkit-background-size: 12px;
     -moz-background-size: 12px;
     -o-background-size: 12px;
@@ -1320,7 +1320,7 @@ a.btnstylerev:hover,
 }
 
 a.btnsmall:hover,
-a.btnstyle:hover, 
+a.btnstyle:hover,
 a.btnsmall-sel:hover{
     color:#fff;
     transition: all 0.2s linear;
@@ -1363,11 +1363,11 @@ body div.selectorlevels .ui-buttonset label.ui-button:hover span{
 
 
 /* this is a (hopefully temperary) fix for a lack of proper span tags */
-#protectiontable, 
-#loghistory table, 
-#notifications>table, 
-#metercounters table, 
-#othersettings table, 
+#protectiontable,
+#loghistory table,
+#notifications>table,
+#metercounters table,
+#othersettings table,
 #floorplans table{
     padding-left: 20px;
     margin-bottom:10px;
@@ -1453,13 +1453,13 @@ input#AcceptNewHardware:checked ~ button {
 
 #settingscontent .span6 td{
     padding:5px;
-    vertical-align: top; 
+    vertical-align: top;
 }
 
 #settingscontent .span4 td:first-of-type,
 #settingscontent .span6 td:first-of-type,
 #settingscontent .span12 td:first-of-type{
-    min-width:80px; 
+    min-width:80px;
     text-align:left!important;
     padding-top:13px;
 }
@@ -1507,7 +1507,7 @@ input#AcceptNewHardware:checked ~ button {
 }
 
 #settingscontent select{
-    min-width:120px; 
+    min-width:120px;
     padding:5px 0;
 }
 
@@ -1537,36 +1537,36 @@ input#AcceptNewHardware:checked ~ button {
     margin: 10px 50% 10px 0;
 }
 
-/*#protectiontable, 
-#loghistory table, 
-#notifications>table, 
-#metercounters table, 
+/*#protectiontable,
+#loghistory table,
+#notifications>table,
+#metercounters table,
 #othersettings table,
-#floorplans table, 
-#settingscontent #ActiveTabs,*/ 
+#floorplans table,
+#settingscontent #ActiveTabs,*/
 #emailtable,
-#hardwarecontent > div:not(.page-header-small):not(.bannav):not(#bannav), 
+#hardwarecontent > div:not(.page-header-small):not(.bannav):not(#bannav),
 #hardwarecontent > table:not(.page-header-small):not(.bannav):not(#bannav),
 #hardwarecontent #ipnodeparamstable,
 #nodeparamstable,
 #utilitycontent #notificationparamstable,
 #plancontent #activeparamstable,
-#usercontent #userparamstable, #cameracontent #activeparamstable, #hardwarecontent #hardwareparamstable, 
-#lightcontent #paramstable:not(:nth-of-type(1)):not(:nth-of-type(2)), 
-#scenecontent #paramstable:not(:nth-of-type(1)):not(:nth-of-type(2)), 
-#weathercontent #notificationparamstable ,#lightcontent #timerparamstable, 
-#tempnotifications #notificationparamstable, #lightcontent #notificationparamstable, 
+#usercontent #userparamstable, #cameracontent #activeparamstable, #hardwarecontent #hardwareparamstable,
+#lightcontent #paramstable:not(:nth-of-type(1)):not(:nth-of-type(2)),
+#scenecontent #paramstable:not(:nth-of-type(1)):not(:nth-of-type(2)),
+#weathercontent #notificationparamstable ,#lightcontent #timerparamstable,
+#tempnotifications #notificationparamstable, #lightcontent #notificationparamstable,
 #scenecontent #timerparamstable,
 #notificationtable:not(.dataTable),
-#notifications>table, 
+#notifications>table,
 #paramstable,#fibaromain #uservariablesedittable,
 #customlog, #timerparamstable,
 #linkparamstable, #influxremote,
 #linkhttpparamstable, #httpremote,
 #linkgooglepubsubparamstable, #googlepubsubremote,
 #fibaromain #linkparamstable, #fibaromain #fibaroremote,
-#userparamstable,#activeparamstable, #lightcontent paramstable, 
-#scenecontent #paramstable, 
+#userparamstable,#activeparamstable, #lightcontent paramstable,
+#scenecontent #paramstable,
 #notificationparamstable, #hardwareparamstable
 {
     background-color:#eee;
@@ -1581,13 +1581,13 @@ input#AcceptNewHardware:checked ~ button {
 }
 
 #devicescontent .bannav td{width:auto!important}
-    
+
 #hardwarecontent #s0metertype {background-color:#eee}
 #hardwarecontent #s0metertype h2{color:#555;background-color:#ddd;width:50%;padding:10px}
 #hardwarecontent #s0metertype button{margin:20px}
 
 #hardwarecontent #limitform {background-color:#eee;padding:20px}
-    
+
 #scenecontent > table:first-of-type{
     width:auto;
     margin-bottom:1em;
@@ -1700,7 +1700,7 @@ table.dataTable thead th img:hover{
 table.display thead th div.DataTables_sort_wrapper{
     padding-right:0;
     /*text-align:left;*/
-    white-space: nowrap;   
+    white-space: nowrap;
     font-weight: normal;
 }
 
@@ -1744,8 +1744,8 @@ div.dataTables_wrapper .ui-widget-header{
     background-color:#ccc;
 }
 
-.dataTables_wrapper .dataTables_info, 
-.dataTables_wrapper .dataTables_length, 
+.dataTables_wrapper .dataTables_info,
+.dataTables_wrapper .dataTables_length,
 .dataTables_wrapper .dataTables_filter{
     color:#999;
 }
@@ -1769,7 +1769,7 @@ div.dataTables_wrapper .ui-widget-header{
 }
 .dataTables_wrapper .dataTables_paginate{margin-top: -3px;}
 .dataTables_wrapper .dataTables_paginate .fg-button{
-    background-image: none; 
+    background-image: none;
     background-color: rgba(250,250,250,0.1);
     font-weight: normal;
 }
@@ -1844,7 +1844,7 @@ table.dataTable td:first-of-type{padding-left:10px;}
 }
 #setpoint_popup td{
     display:flex;
-    flex-direction: column;    
+    flex-direction: column;
     justify-content: center;
 }
 #setpoint_popup td:first-of-type{
@@ -1863,7 +1863,7 @@ table.dataTable td:first-of-type{padding-left:10px;}
     font-style:normal;
     margin: 0!important;
     text-indent:0!important;
-}    
+}
 
 /*
 body:not(.dashboard) .divider .span4 .selectorlevels{
@@ -1955,7 +1955,7 @@ body:not(.dashboard) div.item div.selectorlevels .ui-buttonset{
     text-shadow:none;
     display:flex;
     align-items: center;
-    justify-content: center;  
+    justify-content: center;
     padding: 0.1em 2.1em 0.1em 1em;
     background-color: #2f96b4;
     border-radius:3px;
@@ -2031,7 +2031,7 @@ body .ui-draggable table  tbody tr > td
     height:auto;
     /*transition:visibility 0.5s linear 0.5s, opacity 0.5s linear;*/
     /*opacity: 0;
-    transition: all 0.2s ease-in-out; 
+    transition: all 0.2s ease-in-out;
     transform: scale(0.8); */
     /*transition: all 2s ease-in-out;*/
     text-align:left;
@@ -2046,16 +2046,16 @@ body .ui-draggable table  tbody tr > td
 
 .ui-dialog tr{margin-bottom:5px}
 
-.ui-dialog input, 
+.ui-dialog input,
 .ui-dialog textarea{margin-bottom:5px}
 
 div.ui-dialog table tr td{text-align: left}
 
 center{margin-top: 10px;}
 div.ui-dialog center{
-    padding: 5px 0; 
+    padding: 5px 0;
     margin: 10px 0;
-    border-top: 1px solid rgba(250,250,250,0.1); 
+    border-top: 1px solid rgba(250,250,250,0.1);
     border-bottom:1px solid rgba(250,250,250,0.1);
 }
 
@@ -2064,7 +2064,7 @@ div.ui-dialog center{
 
 #holder #notification{
     background-color:#333;
-    padding:20px    
+    padding:20px
 }
 
 
@@ -2088,7 +2088,7 @@ div.ui-dialog center{
 
 #logcontent .filterExplanation{color:#666}
 #logcontent .filterX{display:none}
-#logcontent .filterX > span{    
+#logcontent .filterX > span{
     margin-left: 3px;
     display: inline-block;
     background-color: #DF2D3A;
@@ -2140,7 +2140,7 @@ body.weather #weatherwidgets .img1 img:hover,
     position: relative;
     top: -3px;
     left:15px;
-    background: url(/images/lock_closed.png) no-repeat center center; 
+    background: url(/images/lock_closed.png) no-repeat center center;
     -webkit-background-size: 16px;
     -moz-background-size: 16px;
     -o-background-size: 16px;
@@ -2272,7 +2272,7 @@ table.mobileitem .status > span > span{margin-right:7px;}
     width: auto;
     flex-grow: 1;
     flex-shrink: 1;
-    align-items: center; 
+    align-items: center;
     padding:5px!important;
     min-height:35px;
 }
@@ -2307,7 +2307,7 @@ body.dashMobile table.mobileitem td#status > span{
     display: inline-flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: flex-end; 
+    justify-content: flex-end;
 }
 
 body.dashMobile table.mobileitem td#status > span > span{
@@ -2394,7 +2394,7 @@ td[colspan]:not([colspan="1"])
 
 #dashcontent .mobileitem td > div.dimslider{
     top: 0!important;
-    left:0; 
+    left:0;
     width:95%;
     margin-right:10px;
     border: 2px solid white;
@@ -2437,46 +2437,46 @@ td[colspan]:not([colspan="1"])
 /* Media queries */
 
 @media all and (max-device-width: 375px){ /* for mobile phones, makes popups work better */
-    
+
     #onMobile #clockitem{display:none}
-    
+
     .ui-dialog{
         width:90%!important;
         margin-left:4%!important;
     }
-    
+
     .ui-dialog td{
         display:block;
         text-align:left;
     }
-    
+
     .ui-dialog td textarea,
     .ui-dialog td input{
         max-width: 80%!important;
         /*color:#333!important;*/
     }
-    
+
     input[type=checkbox] {
         /*transform: scale(1.5);*/
     }
-    
+
     .beforebannav{margin-bottom:10px;}
-    
-    
+
+
     /*  better options buttons (which are somehow reaching back to style.css a lot.. */
-    
+
 }
 
 @media all and (max-width: 479px) {
-    
+
 
     html body#onMobile .navbar,
     html body#onMobile .navbar .navbar-inner,
     html body#onMobile .navbar .navbar-inner .container,
     html body#onMobile .navbar .navbar-inner .container #appnavbar{margin:0;width:100%}
-    
+
     html body#onMobile .navbar .navbar-inner{padding: 10px 10px 0 10px}
-    
+
     html body#onMobile .navbar-inner .container #appnavbar{
         float:none;
         display:flex;
@@ -2490,19 +2490,19 @@ td[colspan]:not([colspan="1"])
 
 
 @media all and (max-device-width: 600px){ /* for mobile phones, makes popups work better */
- 
+
     /*.navbar {padding-right:20px;}*/
-    
+
     body table#itemtable tbody tr,
     .item tr{
         background-color:rgba(255,255,255,0.1);
         width:100%
     }
-    
+
     .dimslider{width:100%!important}
 
     #settingscontent td {display:block;}
-    
+
     .options a.btnsmall,
     .options a.btnsmall-sel,
     .options a.btnsmall-dis{
@@ -2510,28 +2510,28 @@ td[colspan]:not([colspan="1"])
         /*margin-top:4px;
         line-height: 1.1em;*/
         /*height:1.6em;*/
-        
+
     }
     #appnavbar > li{background:none}
     #appnavbar > li > a{
         padding: 2px 4px;
         background-color:transparent;
     }
-    
-    .navbar .nav > li > a> img,  
+
+    .navbar .nav > li > a> img,
     #appnavbar > li > a > img{
         width:32px;
         height:32px;
     }
-    
+
     .navbar .nav li a {text-align:left}
-    
+
     .prebannav, #prebannav{margin-bottom:10px;}
-    
+
     body:not(#onMobile) table[class*="bannav"]{
         padding-left:10px;
     }
-    
+
 }
 
 
@@ -2544,41 +2544,41 @@ td[colspan]:not([colspan="1"])
 /*  Makes the name and value slide above each other on small displays.  */
 
 @media all and (max-width: 767px){
-    
-    
-    body .navbar-fixed-top, 
-    body .navbar-fixed-bottom, 
+
+
+    body .navbar-fixed-top,
+    body .navbar-fixed-bottom,
     body .navbar-static-top {
         margin-right: 0;
         margin-left: 0;
     }
-    
+
     .row-fluid{
         display:block;
     }
-    
+
     #dashcontent div.item.withstatus{
         /*margin-bottom:30px;*/
-    } 
-    
+    }
+
     #bigtext{float:right;}
-    
+
     #dashcontent .item.withstatus #status,
     #dashcontent .item.withstatus .status{
         height:auto;
         position:initial;
     }
-    
+
     #dashcontent .item.withstatus #status > .wrapper > span,
     #dashcontent .item.withstatus .status > .wrapper > span{padding-left:10px}
-    
+
     #dashcontent #lastupdate{
         box-shadow:2px 4px 18px 0px rgba(50, 50, 50, 0.2);
         /*padding-top:3px;*/
     }
-    
+
     /*  some mobile fixes  */
-    
+
     #bigtext,
     .bigtext,
     #img,
@@ -2587,11 +2587,11 @@ td[colspan]:not([colspan="1"])
     .img1,
     #img2,
     #img3{
-        
+
         float:right;
         clear:both
     }
-    
+
     #status,
     .status
 
@@ -2603,43 +2603,43 @@ td[colspan]:not([colspan="1"])
         float:left;
         clear:both
     }
-    
+
     /*
     #copyright{
         left: -22px;
         right: -42px;
     }*/
-    
+
 }
 
 
 @media all and (min-width: 768px) {
-    
+
     .row-fluid{
         display:flex;
         /*flex-wrap: wrap;*/
         /*align-items: stretch;*/
     }
-    
+
     #dashcontent #name,
     #dashcontent .name {
         align-items: center;
         padding: 21px 0 0 10px; /*was 21 at top */
         height:55px;
     }
-    
+
 }
 
 
 /*  A lot of optimising data-output on smaller screens, to avoid things overlapping */
 @media all and (min-width: 768px) and (max-width: 980px){
-    
+
     #name,
     #dashcontent #name{
         padding-top:7px!important;
         padding-left:10px;
     }
-    
+
     div.item:not(.bandleader):not(.withstatus) #bigtext{
         float:left;
         text-align: left;
@@ -2654,29 +2654,29 @@ td[colspan]:not([colspan="1"])
         top: -24px;
         left: 10px;
     }
-    
+
     #dashcontent .span4 .withstatus:not(.bandleader) #bigtext{top:-18px}
     #dashcontent .span3 .withstatus:not(.bandleader) #bigtext{top:-18px}
-    
+
     #bigtext > span{
         font-size:13px;
         font-weight:bold;
     }
     #dashcontent #bigtext > span{
         padding:0 0 3px 0;
-    } 
-    
+    }
+
     #dashcontent .item.withstatus #status,
     #dashcontent .item.withstatus .status{
         top:20px;
         position:relative;
     }
-    
+
     #dashcontent .item.withstatus #status > .wrapper > span,
     #dashcontent .item.withstatus .status > .wrapper > span{
         /*padding-left:10px;*/ /* removed to fix big leftside double indent on span3*/
     }
-    
+
     .navbar .navbar-inner{
         padding-left:20px;
         padding-right:20px;
@@ -2689,12 +2689,12 @@ td[colspan]:not([colspan="1"])
 
     #bigtext{float:right;}
 }
-    
+
 
 @media all  and (min-width: 600px) and (max-width: 1200px){
-    
-    .navbar-static-top .container, 
-    .navbar-fixed-top .container, 
+
+    .navbar-static-top .container,
+    .navbar-fixed-top .container,
     .navbar-fixed-bottom .container {width:100%!important}
 }
 
@@ -2704,19 +2704,19 @@ td[colspan]:not([colspan="1"])
     /* let's keep items with lots of data outputs from getting too tall */
     #dashcontent div.item.withstatus tr td#status > .wrapper,
     #dashcontent div.item.withstatus tr td.status > .wrapper {
-        display:flex; 
+        display:flex;
         flex-wrap: wrap;
         align-items: center;
-    } 
-    
+    }
+
     #dashcontent div.item.withstatus td#status > .wrapper > span,
     #dashcontent div.item.withstatus td.status > .wrapper > span{
         width:100%;
         box-shadow: inset 0 -1px 0px 0px rgba(100, 100, 100, 0.3);
     }
-    
+
     /*
-    #dashcontent div.item.withstatus.statuscount1 tr,    
+    #dashcontent div.item.withstatus.statuscount1 tr,
     #dashcontent div.item.withstatus.statuscount2 tr{min-height:85px}
     #dashcontent div.item.withstatus.statuscount3 tr,
     #dashcontent div.item.withstatus.statuscount4 tr{min-height:115px}
@@ -2734,21 +2734,21 @@ td[colspan]:not([colspan="1"])
 @media all and (min-width: 768px) and (max-width: 1300px){
 
     body.dashboard #main-view > .container {width:100%!important}
-    
+
     body.dashboard .span4{
         width:calc(100% / 3 - 20px)!important;
         -webkit-box-sizing: content-box;
         -moz-box-sizing: content-box;
-        box-sizing: content-box;    
+        box-sizing: content-box;
     }
-    
+
     body.dashboard .span3{
         width:calc(100% / 4 - 20px)!important;
         -webkit-box-sizing: content-box;
         -moz-box-sizing: content-box;
-        box-sizing: content-box;    
+        box-sizing: content-box;
     }
-        
+
 }
 /*  On CSS3 browsers, if the new divider-free display has been enabled (IF..), then be more flexible about displaying items, and override the above general rule.*/
 @media all and (min-width: 768px) and (max-width: 900px){
@@ -2764,10 +2764,10 @@ td[colspan]:not([colspan="1"])
 
 @media all and (min-width: 1100px){
 
-    
+
     body.dashMobile #dashcontent{margin-top:30px;}
     body.dashMobile .beforebannav{position:absolute;top:0px;width: calc(100% - 42px);}
-    
+
     body.dashMobile #dashcontent{
         -moz-column-count: 3;
         -webkit-column-count: 3;
@@ -2776,7 +2776,7 @@ td[colspan]:not([colspan="1"])
         -webkit-column-gap: 1em;
         column-gap: 1em;
     }
-    
+
     body.dashMobile #dashcontent section:not(last-of-type) {
         display: inline-block;
         width:100%;
@@ -2784,16 +2784,16 @@ td[colspan]:not([colspan="1"])
         -moz-column-width: 250px; /* Firefox */
         column-width: 250px;
     }
-    
+
     body.dashMobile #dashcontent .mobileitem{
         width:100%;
         margin-top:0;
     }
-    
+
     body.dashMobile #dashcontent .dimslider{
         width:100%!important;
     }
-    
+
 }
 
 /* larger main menu icon size */
@@ -2888,7 +2888,7 @@ td[colspan]:not([colspan="1"])
 .colordemo{
     display: inline-block;
     position: absolute;
-    
+
 }
 
 
@@ -2910,8 +2910,8 @@ body #iconsmain div.row{
 }
 
 body .iconlist .iconlistitem{
-    display:inline-block;  
-    background-color:rgba(0,0,0,.2);    
+    display:inline-block;
+    background-color:rgba(0,0,0,.2);
     padding:5px;
     border-radius:3px;
     text-align: center;
@@ -2933,7 +2933,7 @@ body .iconlist .iconlistitem img{
 }
 
 body .iconlist .iconlistitem h3{
-    display:block;    
+    display:block;
     font-size:0.9rem;
     float:none;
     color: inherit;
@@ -2946,7 +2946,7 @@ body .iconlist .iconlistitem h3{
 }
 body .iconlist .iconlistitem p{
     font:inherit;
-    display:block;    
+    display:block;
     font-size:0.7rem;
     float:none;
     color:inherit;
@@ -2996,7 +2996,7 @@ body #iconsmain table{
 
 .batterywrapper .batterypercentage{
     margin-left:10px;
-    transition: all 1s ease-in-out;    
+    transition: all 1s ease-in-out;
 }
 .item:not(.batterylevel1) .batterywrapper .batterypercentage{
     opacity:.6;

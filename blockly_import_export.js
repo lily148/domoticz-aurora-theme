@@ -8,7 +8,7 @@ function makeBlocklyExportHTML()
         dataType: 'json',
         success: function (data) {
             if (data.status == "ERROR") {
-                $('#exportpopup').append('<div><h3>Domoticz returned an error.</h3></div>');
+                $('#exportpopup').append('<div><h3>Smart Gateway returned an error.</h3></div>');
                 console.log("server responded with error while getting user variables");
             }
             // If we got good data from Domoticz:
@@ -22,22 +22,22 @@ function makeBlocklyExportHTML()
                 })
                 $( "#exportpopup ul li" ).each(function(index) {
                     $(this).on("click", function(){
-                        var id = $(this).attr('class'); 
+                        var id = $(this).attr('class');
                         getExportCode(id)
                     });
                 });
             }
         },
         error: function () {
-            $('#exportpopup').append('<div><h3>Error communicating with Domoticz</h3></div>');
-            console.log("The theme was unable to get data from Domoticz");
+            $('#exportpopup').append('<div><h3>Error communicating with Smart Gateway</h3></div>');
+            console.log("The theme was unable to get data from Smart Gateway");
         }
     });
 }
 
 
 function getExportCode(id)
-{   
+{
     var getThis = '/json.htm?type=events&param=load&event=' + id;
     $.get( getThis, function( data ) {
         console.log(data);
@@ -56,7 +56,7 @@ function getExportCode(id)
             $('#exportpopupcode').html('Sorry, not a Blocky.');
         }
     });
-    
+
     $('#blocklycopytoclipboard').click(function() {
         $('#exportpopupcode').focus();
         $('#exportpopupcode').select();
@@ -82,7 +82,7 @@ function blocklyImport()
     var alertString = '<div id="importpopup"><h2>Paste in the Blockly code to import: </h2><div><textarea id="textareaholder"></textarea></div><div id="importpopupfooter"><button class="btn btn-info" id="startblocklyimportbtn">Import</button></div>'
     bootbox.alert(alertString);
     setTimeout(createSaveButton,300);
-    
+
     function createSaveButton(){
         $( "#startblocklyimportbtn" ).click(function() {
             var importData = $('#textareaholder').val();
@@ -110,7 +110,7 @@ function saveBlocklyImport(importData)
             console.log("THEME JS - import: apparent success");
         },
         error: function(r) {
-            console.log("THEME JS - import: error sending data to domoticz");
+            console.log("THEME JS - import: error sending data to Smart Gateway");
         }
-    });  
+    });
 }
