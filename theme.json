@@ -57,7 +57,7 @@
         },
         "dashboard_show_data_visualizations": {
             "id":10,
-            "enabled":false,
+            "enabled":true,
             "files": ["dashboard_show_data_visualizations.js","dashboard_show_data_visualizations.css"]
         },
         "navigation_settings_sidemenu": {
