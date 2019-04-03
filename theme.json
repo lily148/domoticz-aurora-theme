@@ -1,5 +1,5 @@
 {
-    "type": "theme",    
+    "type": "theme",
     "name": "Aurora",
     "description": "This is a dark theme for Domoticz",
     "license": "GPL-2.0+",
@@ -7,8 +7,8 @@
     "author": "It's a secret to everybody",
     "homepage": "https://www.domoticz.com",
     "wiki": "https://www.domoticz.com/wiki/auroratheme",
-    "textcolor": "#ffffff",     
-    "backgroundcolor": "#001133",    
+    "textcolor": "#ffffff",
+    "backgroundcolor": "#001133",
     "backgroundimage": "",
     "previewimage": "screenshot.png",
     "variants": [
@@ -17,7 +17,7 @@
     "features": {
         "navigation_main_sidebar": {
             "id":2,
-            "enabled":true,
+            "enabled":false,
             "files": ["navigation_main_sidebar.css"]
         },
         "dashboard_highlighted": {
@@ -29,9 +29,9 @@
             "id":4,
             "enabled":true,
             "files": ["dashboard_vertical_columns.css"]
-        },        
+        },
         "show_version_number": {
-            "id":5,    
+            "id":5,
             "enabled":true,
             "files": ["show_version_number.css"]
         },
@@ -69,7 +69,7 @@
             "id":12,
             "enabled":false,
             "files": ["dashboard_merge_items_with_same_name.js"]
-        },        
+        },
         "dashboard_merge_temp_and_weather": {
             "id":13,
             "enabled":true,
